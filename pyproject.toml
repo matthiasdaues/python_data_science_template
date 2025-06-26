@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "<give it a name>"
+version = "0.1.0"
+description = "<Describe the purpose of your package>"
+authors = ["Matthias Daues <matthias.daues@datenschoenheit.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+psycopg2 = "^2.9"
+aiosql = "^6.0"
+openpyxl = "^3.1"
+python-dotenv = "^1.0"
+
+[[tool.poetry.packages]]
+include = "src"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
