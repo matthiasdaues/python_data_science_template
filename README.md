@@ -76,6 +76,11 @@ Or manually:
 poetry run jupyter notebook --notebook-dir=notebooks
 ```
 
+Or make poetry kernel available in Jupyter for usage within VSCode:
+```bash
+poetry run ipython kernel install --user --name=python_data_science_template
+```
+
 ### Utilities
 
 The template includes useful utilities:
