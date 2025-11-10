@@ -22,8 +22,11 @@ A structured template for Python data science projects with PostgreSQL integrati
 │       ├── ddl_statements/     # Data definition language
 │       └── transactional_sql/  # Queries and analysis SQL
 ├── notebooks/                  # Jupyter notebooks
-├── pyproject.toml             # Poetry configuration
-└── .env.template              # Environment variables template
+├── doc/                        # Jupyter notebooks
+│   ├── adr/                    # Architecture decision records
+│   └── assets/                 # Images or diagrams used in the documentation   
+├── pyproject.toml              # Poetry configuration
+└── .env.template               # Environment variables template
 ```
 
 ## Setup
@@ -101,6 +104,22 @@ The template includes useful utilities:
 - **Database**: psycopg2, aiosql
 - **Environment**: python-dotenv
 - **Notebooks**: jupyter, notebook, ipykernel
+
+## Documentation
+
+00. [Architecture Decision Records](doc/adr)
+01. [Introduction and Goals](docs/01_introduction_and_goals.md)
+02. [Architecture Constraints](docs/02_architecture_constraints.md) 
+03. [System Scope and Context](docs/03_system_scope_and_context.md)
+04. [Solution Strategy](docs/04_solution_strategy.md)
+05. [Building Block View](docs/05_building_block_view.md)
+06. [Runtime View](docs/06_runtime_view.md)
+07. [Deployment View](docs/07_deployment_view.md)
+08. [Crosscutting Concepts](docs/08_crosscutting_concepts.md)
+09. [Architecture Decisions](docs/09_architecture_decisions.md)
+10. [Quality Requirements](docs/10_quality_requirements.md)
+11. [Risks & Technical Debt](docs/11_risks_and_technical_debt.md)
+12. [Glossary](docs/12_glossary.md)
 
 ## License
 
